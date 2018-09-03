@@ -101,7 +101,7 @@ analytics:
 # Site Author
 author:
   name             : "Asher Spector"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/bio-pic.jpg"
   bio              : "I'm a sophomore at Harvard studying math, statistics, and computer science."
   location         : "Cambridge"
   email            : "amspector100@gmail.com"

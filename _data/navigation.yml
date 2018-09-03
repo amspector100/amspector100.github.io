@@ -1,13 +1,15 @@
 # main links
 main:
-   - title: "Posts"
-     url: /year-archive/
-   - title: "Tags"
-     url: /tags/
+   - title: "Home"
+     url: /
+   - title: "Projects"
+     url: /projects/
    - title: "Collections"
      url: /collection-archive/
-   - title: "Blogs"
-     url: /Blogs/
+   - title: "Tags"
+     url: /tags/
+   - title: "Posts"
+     url: /year-archive/
    - title: "About"
      url: /About/
    - title: "Sitemap"
