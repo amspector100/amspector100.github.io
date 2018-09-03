@@ -3,7 +3,7 @@ title:  "Blogs"
 layout: archive
 permalink: /Blogs/
 author_profile: true
-comments: true
+comments: false
 ---
 
 This is my blog page.
