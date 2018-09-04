@@ -258,6 +258,19 @@ compress_html:
 
 # Defaults
 defaults:
+  # _pages
+  #- scope:
+  #    path: ""
+  #    type: pages
+  #  values:
+  #    header:
+  #      overlay_color: "#000"
+  #      overlay_filter: "0"
+  #      overlay_image: /assets/images/triangles-2-skinny.jpg
+  #      cta_label: "Projects"
+  #      caption: "Caption could go here"
+
+
   # _posts
   - scope:
       path: ""

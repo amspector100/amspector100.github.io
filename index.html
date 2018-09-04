@@ -1,7 +1,19 @@
 ---
 layout: home
 author_profile: true
+class: wide
+header:
+  overlay_color: "#000"
+  overlay_filter: "0.0"
+  overlay_image: "/assets/images/bridge1.jpg"
+  #cta_url: "https://github.com/mmistakes/minimal-mistakes/"
+  caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
+
 ---
+
+<!-- Workaround for  -->
+{{ page.excerpt | replace: '!SITE_TITLE!', site.title }}
+
 
 <h1> Welcome to {{site.title}}! </h1> 
 
