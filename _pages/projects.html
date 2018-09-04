@@ -6,9 +6,30 @@ header:
   overlay_color: "#000"
   overlay_filter: "0"
   overlay_image: /assets/images/hex.jpg
+  alt: "Blue hexagons"
   cta_label: "Projects"
-  #cta_url: "https://github.com/mmistakes/minimal-mistakes/"
   caption: "Caption could go here"
-excerpt: "Bacon ipsum dolor sit amet salami ham hock ham, hamburger corned beef short ribs kielbasa biltong t-bone drumstick tri-tip tail sirloin pork chop."
+excerpt: "A semi-complete list of projects I've completed related to math/statistics/programming."
+
+feature_row1:
+
+  - image_path: /assets/images/projects/resized/packages.jpg
+    alt: "Stacked Boxes"
+    title: "packageguidelines"
+    excerpt: "A beginner's guide to developing packages in R, which I wrote for the IQSS at Harvard. It also includes a [comprehensive introduction to git and github](https://amspector100.github.io/packageguidelines/github.html)."
+    url: https://amspector100.github.io/packageguidelines
+    btn_class: "btn--info"
+
+  - image_path: /assets/images/projects/resized/dallas.jpg
+    alt: "Dallas, TX Downtown"
+    title: "TXHousing"
+    excerpt: "A geospatial package I wrote at the Manhattan Institute for a report on urban Texas housing markets. It's intended to be a fully reproducible data project."
+    url: https://amspector100.github.io/TXHousing 
+    btn_class: "btn--info"
+
+
 
 ---
+{% include dev-warning.html %}
+
+{% include feature_row id="feature_row1" %}
