@@ -12,7 +12,7 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "default" # "default", "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "custom" # "default", "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
@@ -209,14 +209,16 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jemoji
+  - jekyll-sitemap
+  - jekyll-jupyter-notebook
 
 # mimic GitHub Pages with --safe
 whitelist:
   - jekyll-paginate
-  - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
   - jemoji
+  - jekyll-sitemap
 
 
 # Archives
@@ -255,9 +257,13 @@ compress_html:
   ignore:
     envs: development
 
-
 # Defaults
 defaults:
+
+  - scope: 
+      path: ""
+    values: 
+      sitemap: true
   # _pages
   #- scope:
   #    path: ""
@@ -279,6 +285,22 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: # true
+      comments: true
       share: true
       related: true
+      toc: true
+      toc_label: "Contents"
+      toc_sticky: true 
+      toc_icon: rocket
+      mathjax: true
+
+
+
+# Collections
+#collections:
+#  - Machine Learning
+#  - Statistics
+#  - 
+
+future: true
+safe: true # for generating sitemap

@@ -1,1 +1,1 @@
-ipython nbconvert --to markdown <notebook>.ipynb --config jekyll.py
+jupyter nbconvert --to markdown <notebook>.ipynb --config jekyll.py

@@ -8,10 +8,6 @@ toc: true
 ---
 {%- endblock header -%}
 
-{% block in_prompt %}
-**In [{{ cell.execution_count }}]:**
-{% endblock in_prompt %}
-
 {% block input %}
 {{ '{% highlight python %}' }}
 {{ cell.source }}
@@ -23,7 +19,7 @@ toc: true
 {% endblock data_svg %} 
 
 {% block data_png %} 
-![png]({{ output.metadata.filenames['image/png'] | path2support }}) 
+![png]({{ output.metadata.filenames['image/png'] | path2support }})
 {% endblock data_png %} 
 
 {% block data_jpg %} 
