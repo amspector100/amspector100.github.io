@@ -23,9 +23,9 @@ description              : "I'll post projects and blog posts here."
 url                      : "amspector100.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "amspector100/amspector100.github.io"
-teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+teaser                   : /assets/images/ghost_sadface.png"
 # breadcrumbs            : false # true, false (default)
-words_per_minute         : 200
+words_per_minute         : 300
 comments:
   provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "staticman_v2" "custom"
   disqus:
@@ -58,9 +58,9 @@ reCaptcha:
   secret                 :
 atom_feed:
   path                   : # blank (default) uses feed.xml
-search                   : # true, false (default)
+search                   : true # true, false (default)
 search_full_content      : # true, false (default)
-search_provider          : # lunr (default), algolia, google
+search_provider          : lunr # lunr (default), algolia, google
 algolia:
   application_id         : # YOUR_APPLICATION_ID
   index_name             : # YOUR_INDEX_NAME
@@ -113,7 +113,7 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           :
+  github           : https://github.com/amspector100
   gitlab           :
   google_plus      :
   keybase          :
@@ -211,7 +211,7 @@ plugins:
   - jemoji
   - jekyll-sitemap
   - jekyll-jupyter-notebook
-
+  
 # mimic GitHub Pages with --safe
 whitelist:
   - jekyll-paginate
