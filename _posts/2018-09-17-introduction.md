@@ -50,9 +50,7 @@ Learning libraries).
 4. Practical Use: I'll discuss how you might practically go about using these
 algorithms (i.e. using libraries like SKLearn, Tensorflow, Pytorch).
 
-Throughout, I'll try to focus extensively on use cases of each of the algorithms
-- i.e. the kinds of situations in which you'd use a Naives Bayes Classifier over
-a SVN or vice versa. Admittedly, not every post will follow this exact
+Throughout, I'll try to focus extensively on use cases of each of the algorithms, i.e. the kinds of situations in which you'd use a Naives Bayes Classifier over a SVN or vice versa. Admittedly, not every post will follow this exact
 structure, but each post should generally cover these kinds of information.
 
 # Blog Structure
@@ -76,11 +74,6 @@ learning techniques.
 you might find handy below. This is meant less as a standalone post, and more as
 a running repository where you can check on bits of terminology which I might
 have glossed over too quickly.
-
-
-
-
-
 
 # Lastly...
 
