@@ -1,7 +1,7 @@
 ---
 layout: single
 toc: true
-published: false 
+published: true 
 
 --- 
 > All models are wrong, but some are useful. — George E. P. Box
@@ -96,15 +96,15 @@ plt.title("Histogram of Observed Data (From the DGP)")
 plt.show()
 {% endhighlight %}
 
-
+ 
 ![png](\assets\images\ipython\2018-09-17-probabilistic-modeling_files\2018-09-17-probabilistic-modeling_1_0.png)
 
  
 Let's try fitting two models to this data.
 
 In the first model, we'll make a big (but correct!) assumption: that the DGP is
-primarily a [Poisson distribution](#poisson). However, we need to find the rate
-parameter for the Poisson distribution. We'll talk more about different types of
+primarily a Poisson Distribution. However, we need to find the rate parameter
+for the Poisson distribution. We'll talk more about different types of
 estimators in the coming posts, but one commonly used estimator is simply the
 mean of the data. This makes intuitive sense, because the mean of a Poisson is
 its rate parameter. Then, if we denote our parameter as $\lambda$, our $n$ data
@@ -130,10 +130,10 @@ ax.legend()
 plt.show()
 {% endhighlight %}
 
- 
+
 ![png](\assets\images\ipython\2018-09-17-probabilistic-modeling_files\2018-09-17-probabilistic-modeling_3_0.png)
 
- 
+
 In our second model, we'll make fewer assumptions about the underlying
 distribution of the data. (This model is also a bit more complicated). We will
 model the density function underlying the data by simply calculating the percent

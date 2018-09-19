@@ -131,13 +131,7 @@ author:
   xing             :
   youtube          : # "https://youtube.com/c/MichaelRoseDesign"
   links:
-    - label: "Introduction"
-      #icon: "fas fa-fw fa-link"
-      url: "https://amspector100.github.io/introduction/"
-    - label: "Probability Theory"
-      url: "https://amspector100.github.io/probability-theory/"
-    - label: "Probabilistic Modeling"
-      url: "https://amspector100.github.io/probabilistic-modeling/"
+
 
 
 
@@ -302,6 +296,8 @@ defaults:
       toc_sticky: true 
       toc_icon: rocket
       mathjax: true
+      sidebar:
+        nav: "docs"
 
 
 
