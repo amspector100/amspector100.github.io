@@ -4,8 +4,8 @@ main:
      url: /
    - title: "Projects"
      url: /projects/
-   - title: "Collections"
-     url: /collection-archive/
+   - title: "Categories"
+     url: /categories/
    - title: "Tags"
      url: /tags/
    - title: "Posts"
