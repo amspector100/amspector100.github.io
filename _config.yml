@@ -16,10 +16,10 @@ minimal_mistakes_skin    : "custom" # "default", "air", "aqua", "contrast", "dar
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Site Name TBD"
+title                    : "Nonstandard Deviations"
 title_separator          : "-"
 name                     : "Asher Spector"
-description              : "I'll post projects and blog posts here."
+description              : "A mathy blog about statistics, machine learning, and data science."
 url                      : "amspector100.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "amspector100/amspector100.github.io"
@@ -130,6 +130,9 @@ author:
   weibo            :
   xing             :
   youtube          : # "https://youtube.com/c/MichaelRoseDesign"
+  links:
+
+
 
 
 # Reading Files
@@ -293,6 +296,8 @@ defaults:
       toc_sticky: true 
       toc_icon: rocket
       mathjax: true
+      sidebar:
+        nav: "docs"
 
 
 
