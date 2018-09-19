@@ -14,3 +14,15 @@ main:
      url: /About/
    - title: "Sitemap"
      url: /sitemap/
+   - title: "Subscribe"
+     url: "https://feedburner.google.com/fb/a/mailverify?uri=blog-normal&amp"
+
+posts:
+  - title: Getting Started
+    children:
+      - title: "Introduction"
+        url: /introduction
+      - title: "15 Minutes of Probability Theory"
+        url: /docs/quick-start-guide/
+      - title: "Probabilistic Modeling"
+        url: /docs/structure/
