@@ -14,6 +14,8 @@ main:
      url: /About/
    - title: "Sitemap"
      url: /sitemap/
+   - title: "Subscribe"
+     url: "https://feedburner.google.com/fb/a/mailverify?uri=blog-normal&amp"
 
 posts:
   - title: Getting Started
