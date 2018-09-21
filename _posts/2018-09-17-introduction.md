@@ -1,8 +1,13 @@
 ---
 layout: single
 toc: true
-published: true 
-
+published: true
+header:
+  teaser: \assets\images\ML\red_blue_hist.png
+categories:
+  - Machine Learning
+tags:
+  - Getting Started 
 --- 
 > "I have had my results for a long time: but I do not yet know how I am to
 arrive at them."  - Carl Friedrich Gauss
@@ -11,17 +16,16 @@ arrive at them."  - Carl Friedrich Gauss
 
 During the winter of 2018, I decided to work through the [SKLearn
 library](http://scikit-learn.org/) in Python and try to rigorously understand
-most, if not all, of the algorithms implemented in it. To my surprise, I found
-that it was rather difficult to find comprehensive explorations of the
-algorithms which were also accessible to non-experts; most blogs skimmed over
-the mathematical underpinnings of machine learning, and most papers presupposed
-great familiarity with the field.
+most of the algorithms implemented in it. To my surprise, I found that it was
+rather difficult to find accessible but comprehensive explorations of the
+algorithms; most blogs skimmed over the mathematical underpinnings of machine
+learning, and most papers presupposed great familiarity with the field.
 
-This section of my blog is devoted to exploring ML in a way that is
-comprehensive and rigorous, but still practical and accessible to a relatively
-broad audience. Obviously, not every reader will be interested in every aspect
-of each post. You might want to simply gain a practical understanding of when to
-use a certain clustering algorithm; or you might want to learn why expectation-
+This section of my blog (labeled as 'ml') is devoted to exploring ML in a way
+that is rigorous but still practical and accessible to a relatively broad
+audience. Obviously, not every reader will be interested in every aspect of each
+post. You might want to simply gain a practical understanding of when to use a
+certain clustering algorithm; or you might want to learn why expectation-
 maximization optimization really works. However, I'm hoping that most people
 will find *something* interesting in these posts.
 
@@ -43,15 +47,17 @@ into the following four sections:
 1. Motivation: I'll probably start with a mix of examples to understand when and
 why an algorithm is useful, and then describe how the algorithm works
 intuitively.
-2. Mathematical Derivation: We'll do some math to prove the algorithm works!
-3. Implementation from Scratch: To understand techniques from top to bottom,
-I'll implement them from scratch (i.e. without using pre-existing Machine
-Learning libraries).
+2. Derivation: We'll do some math to prove the algorithm works!
+3. Implementation: To understand techniques from top to bottom, I'll implement
+them from scratch (i.e. without using pre-existing Machine Learning libraries).
 4. Practical Use: I'll discuss how you might practically go about using these
 algorithms (i.e. using libraries like SKLearn, Tensorflow, Pytorch).
 
-Throughout, I'll try to focus extensively on use cases of each of the algorithms, i.e. the kinds of situations in which you'd use a Naives Bayes Classifier over a SVN or vice versa. Admittedly, not every post will follow this exact
-structure, but each post should generally cover these kinds of information.
+Throughout, I'll try to focus extensively on use cases of each of the
+algorithms, i.e. the kinds of situations in which you'd use a Naives Bayes
+Classifier over a SVN or vice versa. Admittedly, not every post will follow this
+exact structure, but each post should generally cover these kinds of
+information.
 
 # Blog Structure
 
@@ -68,14 +74,11 @@ terms mean, that's okay - in fact, that's the point!)
 - I'm thinking that I'll then talk about some non-parametric methods related to
 kernel density estimators - if you've heard of KNN-nearest neighbor
 classifiers/regression, that's a
-- Lastly, I'll spend a while talking about more sophisticated supervised deep
-learning techniques.
+- Lastly, I'll spend a while talking about more sophisticated deep learning
+techniques.
 
-you might find handy below. This is meant less as a standalone post, and more as
-a running repository where you can check on bits of terminology which I might
-have glossed over too quickly.
 
-# Lastly...
+# Contact Me!
 
 I'm always learning, and I'm sure I will make mistakes in the blog. If you find
 inaccuracies in my posts, please let me know either by [opening an issue on
