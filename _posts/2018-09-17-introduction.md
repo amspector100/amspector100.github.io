@@ -3,12 +3,14 @@ layout: single
 toc: true
 published: true
 header:
-  teaser: \assets\images\ML\red_blue_hist.png
-categories:
+  teaser: /assets/images/ML/red_blue_hist.png
+categories: 
   - Machine Learning
 tags:
-  - Getting Started 
---- 
+  - Getting Started
+excerpt: "A quick overview of the Machine Learning section of the blog."
+---
+
 > "I have had my results for a long time: but I do not yet know how I am to
 arrive at them."  - Carl Friedrich Gauss
 
@@ -21,7 +23,7 @@ rather difficult to find accessible but comprehensive explorations of the
 algorithms; most blogs skimmed over the mathematical underpinnings of machine
 learning, and most papers presupposed great familiarity with the field.
 
-This section of my blog (labeled as 'ml') is devoted to exploring ML in a way
+This section of my blog is devoted to exploring ML in a way
 that is rigorous but still practical and accessible to a relatively broad
 audience. Obviously, not every reader will be interested in every aspect of each
 post. You might want to simply gain a practical understanding of when to use a

@@ -1,16 +1,18 @@
 ---
 layout: single
 toc: true
-published: true 
-header:
-  teaser: \assets\images\ML\feedforward_train.png
-categories:
+published: true
+header: 
+  teaser: /assets/images/ML/feedforward_train.png
+categories: 
   - Machine Learning
 tags:
   - Getting Started
   - Modeling
---- 
-> All models are wrong, but some are useful. — George E. P. Box
+excerpt: "A framework for serious statistical analysis."
+---
+
+> "All models are wrong, but some are useful." — George E. P. Box
 
 # Generative Models
 
@@ -41,8 +43,7 @@ Potter](https://medium.com/deep-writing/harry-potter-written-by-artificial-
 intelligence-8a9431803da6) or even create [fake pictures of real
 celebrities](https://www.youtube.com/watch?v=VrgYtFhVGmg), as pictured below:
 
-![png](\assets\images\ipython\2018-09-17-probabilistic-modeling_files\fake-
-celebrities.PNG)
+![png](\assets\images\ML\fake-celebrities.PNG)
 
 These fake celebrities came from a paper at
 [arXiv:1710.10196](https://arxiv.org/abs/1710.10196).
@@ -50,11 +51,12 @@ These fake celebrities came from a paper at
 # The Data Generating Process
 
 The **Data Generating Process** (DGP) is the "true" generative model. To be more
-specific, in most problems we assume there is some underlying joint probability
-distribution which governs the data we observe, and the DGP is that underlying
-distribution. The DGP is a bit like the government in this sense - we can never
-know exactly what it's doing internally, but we can use external data to get a
-rough sense of what's going on.
+specific, in most problems we assume there is some underlying [joint probability
+distribution](https://amspector100.github.io/mathy/probability-theory-
+in-15-minutes/#joint-and-conditional-distributions) which governs the data we
+observe, and the DGP is that underlying distribution. The DGP is a bit like the
+government in this sense - we can never know exactly what it's doing internally,
+but we can use external data to get a rough sense of what's going on.
 
 In the example in the next section, which will tie together all of this
 material, we have a "God's eye view" and can see the DGP in all its glory, but
@@ -103,18 +105,20 @@ plt.show()
 {% endhighlight %}
 
  
-![png](\assets\images\ipython\2018-09-17-probabilistic-modeling_files\2018-09-17-probabilistic-modeling_1_0.png)
+![png](\assets\images\ipython\2018-09-21-probabilistic-modeling_files\2018-09-21-probabilistic-modeling_1_0.png)
 
  
 Let's try fitting two models to this data.
 
 In the first model, we'll make a big (but correct!) assumption: that the DGP is
-primarily a Poisson Distribution. However, we need to find the rate parameter
-for the Poisson distribution. We'll talk more about different types of
-estimators in the coming posts, but one commonly used estimator is simply the
-mean of the data. This makes intuitive sense, because the mean of a Poisson is
-its rate parameter. Then, if we denote our parameter as $\lambda$, our $n$ data
-points as $X_1, \dots, X_n$, and our estimator as $\hat \lambda$, we define
+primarily a [Poisson
+Distribution](https://amspector100.github.io/mathy/probability-theory-
+in-15-minutes/#poisson). However, we need to find the rate parameter for the
+Poisson distribution. We'll talk more about different types of estimators in the
+coming posts, but one commonly used estimator is simply the mean of the data.
+This makes intuitive sense, because the mean of a Poisson is its rate parameter.
+Then, if we denote our parameter as $\lambda$, our $n$ data points as $X_1,
+\dots, X_n$, and our estimator as $\hat \lambda$, we define
 
 $$ \hat \lambda = \frac{1}{n} \sum_{i = 1}^n X_n$$ 
 
@@ -136,10 +140,10 @@ ax.legend()
 plt.show()
 {% endhighlight %}
 
+ 
+![png](\assets\images\ipython\2018-09-21-probabilistic-modeling_files\2018-09-21-probabilistic-modeling_3_0.png)
 
-![png](\assets\images\ipython\2018-09-17-probabilistic-modeling_files\2018-09-17-probabilistic-modeling_3_0.png)
-
-
+ 
 In our second model, we'll make fewer assumptions about the underlying
 distribution of the data. (This model is also a bit more complicated). We will
 model the density function underlying the data by simply calculating the percent
@@ -182,7 +186,7 @@ plt.show()
 {% endhighlight %}
 
  
-![png](\assets\images\ipython\2018-09-17-probabilistic-modeling_files\2018-09-17-probabilistic-modeling_5_0.png)
+![png](\assets\images\ipython\2018-09-21-probabilistic-modeling_files\2018-09-21-probabilistic-modeling_5_0.png)
 
  
 Both models perform reasonably well, probably because in these kinds of

@@ -2,10 +2,6 @@
 
 {%- block header -%}
 ---
-layout: single
-toc: true
-published: false 
-
 ---
 {%- endblock header -%}
 

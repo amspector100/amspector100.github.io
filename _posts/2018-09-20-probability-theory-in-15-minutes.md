@@ -3,14 +3,15 @@ layout: single
 toc: true
 published: true
 header:
-  teaser: assets\images\ipython\2018-09-17-probability-theory-in-15-minutes_files\2018-09-17-probability-theory-in-15-minutes_18_0.png
-categories:
+  teaser: /assets/images/ipython/2018-09-20-probability-theory-in-15-minutes_files/2018-09-20-probability-theory-in-15-minutes_18_0.png 
+categories: 
   - Mathy
 tags:
   - Getting Started
   - Probability Theory
+excerpt: "A blazing fast review of the probability theory relevant to statistical modeling."
+---
 
---- 
 > "Math is the logic of certainty; statistics is the logic of uncertainty." -
 Joe Blitzstein
 
@@ -34,8 +35,8 @@ $\omega$ is an element of the sample space, i.e. $\omega \in \Omega$, and an
 event $A$ is a subset of the sample space, i.e. $A \subset \Omega$. In the
 previous example,
 
-$$ \Omega = \{ \text{ roll a $2$, roll a $3$, roll a $3$, \dots, roll a $12$ }
-\} $$
+$$ \Omega = \{ \text{ roll a $2$, roll a $3$, roll a $3$, }\dots, \text{ roll a
+$12$ } \} $$
 $$ \omega = \{ \text{ roll a $1$ } \}$$
 $$ A = \{ \text{ roll an odd number } \} $$
 
@@ -99,7 +100,7 @@ plt.show()
 {% endhighlight %}
 
  
-![png](\assets\images\ipython\2018-09-17-probability-theory-in-15-minutes_files\2018-09-17-probability-theory-in-15-minutes_1_0.png)
+![png](\assets\images\ipython\2018-09-20-probability-theory-in-15-minutes_files\2018-09-20-probability-theory-in-15-minutes_1_0.png)
 
  
 Although it's nice to visualize distributions, we also want to be able to write
@@ -133,7 +134,7 @@ plt.show()
 {% endhighlight %}
 
  
-![png](\assets\images\ipython\2018-09-17-probability-theory-in-15-minutes_files\2018-09-17-probability-theory-in-15-minutes_3_0.png)
+![png](\assets\images\ipython\2018-09-20-probability-theory-in-15-minutes_files\2018-09-20-probability-theory-in-15-minutes_3_0.png)
 
  
 CDFs are useful because we can use them to calculate the probability that a
@@ -169,7 +170,7 @@ plt.show()
 {% endhighlight %}
 
  
-![png](\assets\images\ipython\2018-09-17-probability-theory-in-15-minutes_files\2018-09-17-probability-theory-in-15-minutes_5_0.png)
+![png](\assets\images\ipython\2018-09-20-probability-theory-in-15-minutes_files\2018-09-20-probability-theory-in-15-minutes_5_0.png)
 
  
 Note that because $X$ is discrete, the PMF is zero almost everywhere - it only
@@ -198,7 +199,7 @@ plt.show()
 {% endhighlight %}
 
  
-![png](\assets\images\ipython\2018-09-17-probability-theory-in-15-minutes_files\2018-09-17-probability-theory-in-15-minutes_7_0.png)
+![png](\assets\images\ipython\2018-09-20-probability-theory-in-15-minutes_files\2018-09-20-probability-theory-in-15-minutes_7_0.png)
 
  
 Let's try to interpret this arbitrary CDF. Recall that the CDF $F$ for a random
@@ -230,7 +231,7 @@ plt.show()
 {% endhighlight %}
 
  
-![png](\assets\images\ipython\2018-09-17-probability-theory-in-15-minutes_files\2018-09-17-probability-theory-in-15-minutes_9_0.png)
+![png](\assets\images\ipython\2018-09-20-probability-theory-in-15-minutes_files\2018-09-20-probability-theory-in-15-minutes_9_0.png)
 
  
 At this point, the difference between a "Probability Mass Function" and a
@@ -284,8 +285,8 @@ a random variable and its own expectation. I.e. for any $X$,
 $$\text{Var}(X) = E\bigg( (E(X) - X)^2 \bigg) $$
 
 Using the linear properties of expectation, we can simplify to find that
-$$\text{Var}(X) = E\bigg( E(X)^2 - 2 XE(X) + E(X)E(X) \bigg) = E \Big(X^2\Big) -
-E\Big(2 X E(X)\Big) + E\Big( E(X)E(X)\Big)$$
+$$\text{Var}(X) = E\bigg( E(X)^2 - 2 XE(X) + E(X)E(X) \bigg)$$
+$$= E \Big(X^2\Big) - E\Big(2 X E(X)\Big) + E\Big( E(X)E(X)\Big)$$
 Because expectation is linear, and the value $E(X)$ is a constant, we can pull
 rearrange as follows
 $$ \text{Var}(X) = E(X^2) - 2E(X)^2 + E(X)^2 = E(X^2) - E(X)^2 $$
@@ -326,7 +327,7 @@ ax1.legend()
 
 
  
-![png](\assets\images\ipython\2018-09-17-probability-theory-in-15-minutes_files\2018-09-17-probability-theory-in-15-minutes_12_1.png)
+![png](\assets\images\ipython\2018-09-20-probability-theory-in-15-minutes_files\2018-09-20-probability-theory-in-15-minutes_12_1.png)
 
  
 ### Moments
@@ -370,8 +371,9 @@ Another way to phrase this is to write
 $$P(A|B) = \frac{P(A, B)}{P(B)}$$
 where $P(A,B)$ is the probability that *both* $A$ and $B$ occur. With this
 definition, we can also see that
-$$P(A|B) P(B) =  \frac{P(A, B)}{P(B)} P(B) = P(A, B) \text{ and similarly }
-P(B|A) P(A) = P(A,B)$$
+$$P(A|B) P(B) =  \frac{P(A, B)}{P(B)} P(B) = P(A, B)$$
+and similarly
+$$P(B|A) P(A) = P(A,B)$$
 due to cancellation; this holds for any number of events and is often referred
 to as the **chain rule of proabbility**. For example, for any four events we
 know
@@ -459,7 +461,8 @@ $$ p_{x, y} = p_x(x) p_{y|x}(y|x)$$
 
 The **covariance** of two random variables $X$ and $Y$ are is defined as
 
-$$\text{Cov}(X, Y) = E\bigg( (X - E(X)) (Y - E(Y)) \bigg) = E(XY) - E(X)E(Y)$$
+$$\text{Cov}(X, Y) = E\bigg( (X - E(X)) (Y - E(Y)) \bigg)$$
+$$= E(XY) - E(X)E(Y)$$
 
 Although the rightmost expression is often very useful in practice, the middle
 expression can help us get a sense of what covariance actually means. $E\bigg(
@@ -479,9 +482,9 @@ because if $X$ was quite large, then $Y$ would be highly negative.
 We often think about the *covariance matrix* of two random vectors, which is
 simply a matrix holding the covariance of each of the components of the two
 vectors. More specifically, for $X, Y$ which are random vectors in
-$\mathbb{R}^n$, define
-$$\text{Cov}(X, Y) = \begin{bmatrix} \text{Cov}(X_1, Y_1) & \text{Cov}(X_1, Y_2)
-& \dots & \text{Cov}(X_1, Y_n)
+$\mathbb{R}^n$, define $\text{Cov}(X, Y)$ as:
+$$ \begin{bmatrix} \text{Cov}(X_1, Y_1) & \text{Cov}(X_1, Y_2) & \dots &
+\text{Cov}(X_1, Y_n)
 \\ \text{Cov}(X_2, Y_1) & \text{Cov}(X_2, Y_2) & \dots & \text{Cov}(X_2, Y_n)
 \\ \vdots & \vdots & \vdots & \vdots
 \\ \text{Cov}(X_n, Y_1) & \text{Cov}(X_n, Y_2) & \dots & \text{Cov}(X_n,
@@ -572,8 +575,8 @@ a $p$ probability of landing heads. More formally, a binomially distributed
 random variables is identically distributed to the sum of a bunch of independent
 Bernoulli random variables:
 
-$$ X  \sim Bin(n, p) \implies  X \sim X_1 + X_2 + \dots + X_n \text{ where } X_i
-\sim \text{Bern}(p) $$
+$$ X  \sim Bin(n, p) \implies  X \sim X_1 + X_2 + \dots + X_n$$
+where $X_i \sim \text{Bern}(p) $.
 
 How does this relate to the PMF from above? Well, let's consider the Binomial as
 a sum of Bernoulli's. We want to find the probability that there will be $k$
@@ -613,7 +616,7 @@ plt.show()
 {% endhighlight %}
 
  
-![png](\assets\images\ipython\2018-09-17-probability-theory-in-15-minutes_files\2018-09-17-probability-theory-in-15-minutes_14_0.png)
+![png](\assets\images\ipython\2018-09-20-probability-theory-in-15-minutes_files\2018-09-20-probability-theory-in-15-minutes_14_0.png)
 
 
 ## <a name = "poisson"></a> Poisson and Exponential
@@ -622,7 +625,7 @@ Just for a second, imagine you are an avid dragon-watcher. One day, you decide t
 1. You are equally likely to spot a dragon at any time. Seeing lots of dragons one hour does not make you less likely to see dragons the next hour; and dragons are equally prevalent in this magical forest at all hours of the day.
 2. It seems that the number of dragons you spot in a given time interval is proportional to the length of a time interval. For example, if you spot a single dragon in a 1 hour period, then this implies that you are likely to spot (on average) $k$ dragons in every $k$-hour period.
 
-This is a (magical) example of a **poisson process**. A poisson process is a time-dependent process in which we are interested in a specific kind of random occurence (for occurence, the event of spotting a dragon). Informally, the assumptions of the poisson process are that (i) random occurences are equally likely to occur at any time, (ii) for any two time intervals, the number of random occurences in one interval or the other is independent.
+This is a (magical) example of a **poisson process**. A poisson process is a time-independent process in which we are interested in a specific kind of random occurence (for occurence, the event of spotting a dragon). Informally, the assumptions of the poisson process are that (i) random occurences are equally likely to occur at any time, (ii) for any two time intervals, the number of random occurences in one interval or the other is independent.
 
 It turns out that these two assumptions are enough to characterize two very special distributions, called the *Poisson* and the *Exponential*. 
 
@@ -653,7 +656,7 @@ plt.show()
 {% endhighlight %}
 
  
-![png](\assets\images\ipython\2018-09-17-probability-theory-in-15-minutes_files\2018-09-17-probability-theory-in-15-minutes_16_0.png)
+![png](\assets\images\ipython\2018-09-20-probability-theory-in-15-minutes_files\2018-09-20-probability-theory-in-15-minutes_16_0.png)
 
  
 
@@ -679,7 +682,7 @@ plt.show()
 {% endhighlight %}
 
  
-![png](\assets\images\ipython\2018-09-17-probability-theory-in-15-minutes_files\2018-09-17-probability-theory-in-15-minutes_18_0.png)
+![png](\assets\images\ipython\2018-09-20-probability-theory-in-15-minutes_files\2018-09-20-probability-theory-in-15-minutes_18_0.png)
 
  
 The parameters of a Normal distribution have a simple interpretation: for $X
