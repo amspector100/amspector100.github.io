@@ -2,7 +2,13 @@
 layout: single
 toc: true
 published: true 
-
+header:
+  teaser: \assets\images\ML\feedforward_train.png
+categories:
+  - Machine Learning
+tags:
+  - Getting Started
+  - Modeling
 --- 
 > All models are wrong, but some are useful. — George E. P. Box
 

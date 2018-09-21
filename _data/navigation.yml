@@ -21,8 +21,8 @@ posts:
   - title: Getting Started
     children:
       - title: "Introduction"
-        url: /introduction
+        url: /machine%20learning/introduction/
       - title: "15 Minutes of Probability Theory"
-        url: /docs/quick-start-guide/
+        url: /mathy/probability-theory-in-15-minutes/
       - title: "Probabilistic Modeling"
-        url: /docs/structure/
+        url: /machine%20learning/probabilistic-modeling/
