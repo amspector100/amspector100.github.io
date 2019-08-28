@@ -12,4 +12,6 @@ If you get errors, might be worth referencing the issue here: https://github.com
 and then looking at the gemfile/config.yml here:
 https://github.com/mmistakes/mm-github-pages-starter/blob/master/Gemfile
 
+## Creating files
+
 ## Editing files without changng them too much
