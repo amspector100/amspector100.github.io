@@ -9,15 +9,39 @@ header:
   alt: "Blue hexagons"
   cta_label: "Projects"
   #caption: "Caption could go here"
-excerpt: "A semi-complete list of projects I've completed related to math/statistics/programming."
+excerpt: "A fairly incomplete list of projects I've completed related to math/statistics/programming. Many (most) of these are still works in progress."
 
 feature_row1:
 
-  - image_path: /assets/images/projects/resized/packages.jpg
-    alt: "Stacked Boxes"
-    title: "packageguidelines"
-    excerpt: "A beginner's guide to developing packages in R, which I wrote for the IQSS at Harvard. It also includes a [comprehensive introduction to git and github](https://amspector100.github.io/packageguidelines/github.html)."
-    url: https://amspector100.github.io/packageguidelines
+  - image_path: /assets/images/projects/resized/knockoffs.jpg
+    alt: "A knockoff copy of Disney's Ratatouille"
+    title: "knockadapt"
+    excerpt: "I develop algorithms to adaptively group variables in high dimensional variable selection problems. [Lucas Janson](http://lucasjanson.fas.harvard.edu/) is my advisor on this project, which draws from the model-X knockoff literature."
+    url: https://github.com/amspector100/knockadapt
+    btn_class: "btn--info"
+
+  - image_path: /assets/images/projects/resized/privacy.jpg
+    alt: "A board game with pieces and a die"
+    title: "Privacy and Game Theory"
+    excerpt: "I'm working to model the behaviors of agents who prefer not to reveal their preferences to a mechanism (in the context of algorithmic mechanism design). We find that differentially private mechanisms may reduce net social utility."
+    url: https://github.com/amspector100/c136privacyproject
+    btn_class: "btn--info"
+
+  - image_path: /assets/images/projects/resized/disclatent.jpg
+    alt: "A multimodal 2 dimensional distribution"
+    title: "Training Discrete VAEs for Sentences"
+    excerpt: "Some methods to improve training of discrete variational autoencoders applied to natural language processing. Specifically, we use clustering algorithms to improve the accuracy of biased gradient updates."
+    url: https://github.com/amspector100/discrete-latent
+    btn_class: "btn--info"
+
+
+feature_row2:
+
+  - image_path: /assets/images/projects/resized/ell_stat186.jpg
+    alt: "Young children working at school"
+    title: "Heterogenous Effects in Literacy Interventions"
+    excerpt: "We identified strong heterogenous effects from a randomized control trial studying early language literacy interventions in Miami-Dade."
+    url: https://github.com/amspector100/stat186
     btn_class: "btn--info"
 
   - image_path: /assets/images/projects/resized/dallas.jpg
@@ -27,8 +51,14 @@ feature_row1:
     url: https://amspector100.github.io/TXHousing 
     btn_class: "btn--info"
 
-
-
+  - image_path: /assets/images/projects/resized/packages.jpg
+    alt: "Stacked Boxes"
+    title: "packageguidelines"
+    excerpt: "A beginner's guide to developing packages in R, which I wrote for the IQSS at Harvard. It also includes a [comprehensive introduction to git and github](https://amspector100.github.io/packageguidelines/github.html)."
+    url: https://amspector100.github.io/packageguidelines
+    btn_class: "btn--info"
 ---
 
 {% include feature_row id="feature_row1" %}
+{% include feature_row id="feature_row2" %}
+
