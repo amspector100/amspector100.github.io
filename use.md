@@ -14,4 +14,8 @@ https://github.com/mmistakes/mm-github-pages-starter/blob/master/Gemfile
 
 ## Creating files
 
+1. Write a cool jupyter notebook file in ipython. It should have the following title format: 
+"yyyy-mm-dd-titleword1-titleword2.ipynb"
+2. 
+
 ## Editing files without changng them too much
