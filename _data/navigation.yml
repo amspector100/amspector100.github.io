@@ -6,6 +6,8 @@ main:
      url: /categories/
    - title: "Projects"
      url: /projects/
+   #- title: "Publications"
+   #  url: /publications/
    #- title: "Tags"
    #  url: /tags/
    #- title: "Posts"
