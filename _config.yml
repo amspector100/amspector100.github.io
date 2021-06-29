@@ -19,7 +19,7 @@ locale                   : "en-US"
 title                    : "Asher Spector" # (b)log-normal
 title_separator          : "-"
 name                     : "Asher Spector"
-description              : "A mathy blog about statistics, machine learning, and data science."
+description              : "Asher Spector's personal website."
 url                      : "https://amspector100.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "amspector100/amspector100.github.io"
@@ -101,8 +101,8 @@ analytics:
 # Site Author
 author:
   name             : "Asher Spector"
-  avatar           : "/assets/images/bio-pic.jpg"
-  bio              : "I'm a senior at Harvard studying statistics, math, and computer science."
+  avatar           : "/assets/images/bio-pic-thailand.jpg"
+  bio              : "I'm an incoming PhD student in statistics at Stanford. I graduated from Harvard in 2021."
   location         : "Cambridge"
   email            : "amspector100@gmail.com"
   uri              :
