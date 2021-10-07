@@ -2,10 +2,10 @@
 main:
    - title: "Home"
      url: /
-   - title: "Publications"
-     url: /publications/
-   - title: "Projects"
-     url: /projects/
+   - title: "Research"
+     url: /research/
+   #- title: "Projects"
+     #url: /projects/
    #- title: "Tags"
    #  url: /tags/
    #- title: "Posts"
@@ -16,8 +16,8 @@ main:
      url: /About/
    #- title: "Sitemap"
    #  url: /sitemap/
-   - title: "Subscribe"
-     url: /subscribe/
+   #- title: "Subscribe"
+     #url: /subscribe/
 
 posts:
   - title: Getting Started
