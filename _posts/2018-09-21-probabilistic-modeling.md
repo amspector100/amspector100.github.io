@@ -5,11 +5,11 @@ published: true
 header: 
   teaser: /assets/images/ML/feedforward_train.png
 categories: 
-  - Machine Learning
+  - Review
 tags:
   - Getting Started
   - Modeling
-excerpt: "A framework for serious statistical analysis."
+excerpt: "What is a statistical model?"
 ---
 
 > "All models are wrong, but some are useful." — George E. P. Box
@@ -54,14 +54,13 @@ The **Data Generating Process** (DGP) is the "true" generative model. To be more
 specific, in most problems we assume there is some underlying [joint probability
 distribution](https://amspector100.github.io/mathy/probability-theory-
 in-15-minutes/#joint-and-conditional-distributions) which governs the data we
-observe, and the DGP is that underlying distribution. The DGP is a bit like the
-government in this sense - we can never know exactly what it's doing internally,
+observe, and the DGP is that underlying distribution. We don't observe the DGP istself,
 but we can use external data to get a rough sense of what's going on.
 
 In the example in the next section, which will tie together all of this
 material, we have a "God's eye view" and can see the DGP in all its glory, but
 only because I literally made up the data. In reality, you will never know the
-DGP - the point of ML is broadly to create models which approximate it. We call
+DGP - the point of statistics is broadly to create models which approximate it. We call
 a model *correctly specified* if it has the same underlying structure as the
 DGP.
 
@@ -169,7 +168,7 @@ against the Poisson model:
 {% highlight python %}
 from sklearn.neighbors.kde import KernelDensity
 
-# Model 2 - Rectangular KDE 
+# Model 2 - Rectangular KDE
 bandwidth = 1.06 * data.std() * num_samples ** (-1/5)
 def f_hat(y): 
     return sum(1 for x in data if abs(x - y) < bandwidth)/len(data)

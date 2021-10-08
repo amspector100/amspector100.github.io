@@ -10,7 +10,7 @@ class: wide
 published: false
 ---
 
-## Motivation 
+## Motivation
 
 > All models are wrong, but some are useful. — George E. P. Box
 

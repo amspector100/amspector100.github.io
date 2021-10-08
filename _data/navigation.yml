@@ -8,12 +8,13 @@ main:
      url: /software/
    - title: "Teaching"
      url: /teaching/
-   - title: "Thoughts"
-     url: /categories/
    - title: "About"
      url: /About/
+   - title: "Misc"
+     url: /categories/
 
    ### Old
+
    #- title: "Projects"
      #url: /projects/
    #- title: "Tags"

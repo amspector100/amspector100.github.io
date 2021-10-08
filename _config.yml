@@ -102,9 +102,10 @@ analytics:
 author:
   name             : "Asher Spector"
   avatar           : "/assets/images/bio-pic-grad.jpg"
-  bio              : "I'm an incoming PhD student in statistics at Stanford. I graduated from Harvard in 2021."
-  location         : "Cambridge"
-  email            : "amspector100@gmail.com"
+  bio              : "I'm a first-year PhD student in statistics at Stanford. I graduated from Harvard in 2021."
+  location         : "Palo Alto"
+  email            : "aspector@stanford.edu"
+  google_scholar   : "https://scholar.google.com/citations?user=ojVFAVYAAAAJ&hl=en"
   uri              :
   home             : # null (default), "absolute or relative url to link to author home"
   bitbucket        :
@@ -131,7 +132,6 @@ author:
   xing             :
   youtube          : # "https://youtube.com/c/MichaelRoseDesign"
   links:
-
 
 
 

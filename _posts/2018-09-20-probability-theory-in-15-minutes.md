@@ -5,11 +5,11 @@ published: true
 header:
   teaser: /assets/images/ipython/2018-09-20-probability-theory-in-15-minutes_files/2018-09-20-probability-theory-in-15-minutes_18_0.png 
 categories: 
-  - Mathy
+  - Review
 tags:
   - Getting Started
   - Probability Theory
-excerpt: "A blazing fast review of the probability theory relevant to statistical modeling."
+excerpt: "A quick review of probability theory."
 ---
 
 > "Math is the logic of certainty; statistics is the logic of uncertainty." -
