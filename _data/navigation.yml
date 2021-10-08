@@ -4,16 +4,22 @@ main:
      url: /
    - title: "Research"
      url: /research/
+   - title: "Software"
+     url: /software/
+   - title: "Teaching"
+     url: /teaching/
+   - title: "Thoughts"
+     url: /categories/
+   - title: "About"
+     url: /About/
+
+   ### Old
    #- title: "Projects"
      #url: /projects/
    #- title: "Tags"
    #  url: /tags/
    #- title: "Posts"
    #  url: /year-archive/
-   - title: "(b)log-normal"
-     url: /categories/
-   - title: "About"
-     url: /About/
    #- title: "Sitemap"
    #  url: /sitemap/
    #- title: "Subscribe"
