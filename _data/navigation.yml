@@ -10,8 +10,10 @@ main:
    #   url: /talks/
    - title: "Teaching"
      url: /teaching/
-   - title: "About"
-     url: /About/
+   #- title: "About"
+   #  url: /About/
+   - title: "CV"
+     url: /assets/docs/cv.pdf
    - title: "Misc"
      url: /categories/
 

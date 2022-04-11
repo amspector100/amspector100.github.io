@@ -104,7 +104,7 @@ author:
   avatar           : "/assets/images/bio-pic-grad.jpg"
   bio              : "I'm a first-year PhD student in statistics at Stanford. I graduated from Harvard in 2021."
   location         : "Palo Alto"
-  email            : "aspector@stanford.edu"
+  email            : "aspector (at) stanford (dot) edu"
   google_scholar   : "https://scholar.google.com/citations?user=ojVFAVYAAAAJ&hl=en"
   uri              :
   home             : # null (default), "absolute or relative url to link to author home"
