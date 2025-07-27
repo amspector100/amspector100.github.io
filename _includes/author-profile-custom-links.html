@@ -6,7 +6,13 @@
   {% for link in site.author.links %}
     <li>
       <a href="{{ link.url }}" itemprop="sameAs"{% if link.url contains "://" %} target="_blank" rel="nofollow noopener noreferrer"{% endif %}>
-        {% if link.icon %}<i class="{{ link.icon }}" aria-hidden="true"></i> {% endif %}{{ link.label }}
+        {% if link.icon %}
+          {% if link.icon contains "fa" %}
+            <i class="{{ link.icon }}" aria-hidden="true"></i> 
+          {% else %}
+            <span class="{{ link.icon }}" aria-hidden="true"></span> 
+          {% endif %}
+        {% endif %}{{ link.label }}
       </a>
     </li>
   {% endfor %}

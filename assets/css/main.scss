@@ -8,6 +8,24 @@
 @import "minimal-mistakes"; // main partials
 
 /* Custom styles */
-.author__urls .fa-futbol {
-  color: #000000; 
+
+/* Custom icons with Font Awesome alignment */
+.custom-gr-icon,
+.custom-stock-icon {
+  display: inline-block;
+  width: 1.25em;        /* Same as fa-fw fixed width */
+  height: 1em;          /* Same height as Font Awesome icons */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  vertical-align: -0.125em;  /* Same vertical alignment as Font Awesome */
+  text-align: center;
+}
+
+.custom-gr-icon {
+  background-image: url('/assets/images/icons/rat-icon.svg');
+}
+
+.custom-stock-icon {
+  background-image: url('/assets/images/icons/stock-icon.svg');
 }

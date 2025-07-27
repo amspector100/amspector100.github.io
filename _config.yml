@@ -12,7 +12,7 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "custom" # "default", "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "default" # "default", "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
@@ -132,8 +132,8 @@ author:
   xing             :
   youtube          : # "https://youtube.com/c/MichaelRoseDesign"
   links:
-    - label: "Extracurriculars"
-      icon: "fas fa-fw fa-futbol"
+    - label: "golden-rat.io"
+      icon: "fa-fw custom-stock-icon"
       url: "https://golden-rat.io"
 
 
