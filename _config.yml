@@ -18,14 +18,14 @@ minimal_mistakes_skin    : "custom" # "default", "air", "aqua", "contrast", "dar
 locale                   : "en-US"
 title                    : "Asher Spector" # (b)log-normal
 title_separator          : "-"
-name                     : "Asher Spector"
-description              : "Asher Spector's personal website."
+name                     : "Asher"
+description              : "Asher Spector's website."
 url                      : "https://amspector100.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "amspector100/amspector100.github.io"
 teaser                   :  #"/assets/images/distribution.png"
 # breadcrumbs            : false # true, false (default)
-words_per_minute         : 250
+words_per_minute         : 150
 comments:
   provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "staticman_v2" "custom"
   disqus:
@@ -102,8 +102,8 @@ analytics:
 author:
   name             : "Asher Spector"
   avatar           : "/assets/images/biopics/biopic_carmel.jpeg"
-  bio              : "I'm a PhD student in statistics at Stanford. I graduated from Harvard in 2021."
-  location         : "Palo Alto"
+  bio              : "Statistics @ Stanford, Harvard '21."
+  location         : "Palo Alto/SF"
   email            : "aspector (at) stanford (dot) edu"
   google_scholar   : "https://scholar.google.com/citations?user=ojVFAVYAAAAJ&hl=en"
   uri              :
@@ -120,19 +120,21 @@ author:
   keybase          :
   instagram        :
   lastfm           :
-  linkedin         : asher-spector-7981a1155 # "john-doe-12345678" (the last part of your profile url, e.g. https://www.linkedin.com/in/john-doe-12345678)
+  linkedin         : #asher-spector-7981a1155 # "john-doe-12345678" (the last part of your profile url, e.g. https://www.linkedin.com/in/john-doe-12345678)
   pinterest        :
   soundcloud       :
   stackoverflow    : # "123456/username" (the last part of your profile url, e.g. https://stackoverflow.com/users/123456/username)
   steam            : # "steamId" (the last part of your profile url, e.g. https://steamcommunity.com/id/steamId/)
   tumblr           :
-  twitter          :
+  twitter          : amspector100
   vine             :
   weibo            :
   xing             :
   youtube          : # "https://youtube.com/c/MichaelRoseDesign"
   links:
-
+    - label: "Extracurriculars"
+      icon: "fas fa-fw fa-futbol"
+      url: "https://golden-rat.io"
 
 
 # Reading Files
@@ -211,7 +213,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
-  - jemoji
+  # - jemoji  # Temporarily disabled due to nokogiri compatibility issue
   - jekyll-sitemap
   - jekyll-include-cache
   - jekyll-jupyter-notebook
@@ -221,7 +223,7 @@ whitelist:
   - jekyll-paginate
   - jekyll-gist
   - jekyll-feed
-  - jemoji
+  # - jemoji  # Temporarily disabled due to nokogiri compatibility issue
   - jekyll-sitemap
 
 

@@ -1,7 +1,13 @@
-<!--
-  <li>
-    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs">
-      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
-    </a>
-  </li>
--->
+{% comment %}
+  Custom author links from _config.yml author.links
+{% endcomment %}
+
+{% if site.author.links %}
+  {% for link in site.author.links %}
+    <li>
+      <a href="{{ link.url }}" itemprop="sameAs"{% if link.url contains "://" %} target="_blank" rel="nofollow noopener noreferrer"{% endif %}>
+        {% if link.icon %}<i class="{{ link.icon }}" aria-hidden="true"></i> {% endif %}{{ link.label }}
+      </a>
+    </li>
+  {% endfor %}
+{% endif %}
