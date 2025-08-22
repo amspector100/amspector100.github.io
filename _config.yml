@@ -103,9 +103,9 @@ author:
   name             : "Asher Spector"
   avatar           : "/assets/images/biopics/biopic_carmel.jpeg"
   bio              : "Statistics @ Stanford, Harvard '21."
-  location         : "Palo Alto/SF"
+  location         : #"Palo Alto/SF"
   email            : "aspector (at) stanford (dot) edu"
-  google_scholar   : "https://scholar.google.com/citations?user=ojVFAVYAAAAJ&hl=en"
+  google_scholar   : #"https://scholar.google.com/citations?user=ojVFAVYAAAAJ&hl=en"
   uri              :
   home             : # null (default), "absolute or relative url to link to author home"
   bitbucket        :
@@ -133,7 +133,7 @@ author:
   youtube          : # "https://youtube.com/c/MichaelRoseDesign"
   links:
     - label: "golden-rat.io"
-      icon: "fa-fw custom-stock-icon"
+      #icon: "fa-fw custom-stock-icon"
       url: "https://golden-rat.io"
 
 

@@ -29,3 +29,14 @@
 .custom-stock-icon {
   background-image: url('{{ "/assets/images/icons/stock-icon.svg" | relative_url }}');
 }
+
+/* Make the golden-rat.io link text match the page background */
+a[href*="golden-rat.io"] {
+  color: $background-color !important;
+}
+
+a[href*="golden-rat.io"]:hover,
+a[href*="golden-rat.io"]:focus {
+  color: $background-color !important;
+  text-decoration: none;
+}
